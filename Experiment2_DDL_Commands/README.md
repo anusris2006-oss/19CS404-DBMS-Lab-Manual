@@ -262,9 +262,6 @@ CREATE TABLE contacts(
 **Output:**
 <img width="1206" height="442" alt="image" src="https://github.com/user-attachments/assets/31ca80f5-edd7-4bfb-91a8-6a29d9688a18" />
 
-## RESULT
-Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
-
 
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
