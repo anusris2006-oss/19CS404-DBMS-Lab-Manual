@@ -38,124 +38,140 @@ HAVING condition;
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="1200" height="571" alt="image" src="https://github.com/user-attachments/assets/d4523002-ca47-475d-bba6-17c2021fe94c" />
 
 ```sql
--- Paste your SQL code below for Question 1
+select avg(purch_amt) as AVERAGE from orders;
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1202" height="435" alt="image" src="https://github.com/user-attachments/assets/06860ad3-4c2f-4f66-a2cc-4dbe53251cc5" />
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="1195" height="547" alt="image" src="https://github.com/user-attachments/assets/7c2d4bd9-12b4-40b4-a309-57470426cadc" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+select (max(price)-min(price)) as price_diff from fruits;
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1199" height="423" alt="image" src="https://github.com/user-attachments/assets/7f2b3179-fdba-446b-87e4-22c2f441cf8c" />
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="1191" height="521" alt="image" src="https://github.com/user-attachments/assets/ae8967df-a63a-4bd5-8b8f-e23066bbca5d" />
 
 ```sql
--- Paste your SQL code below for Question 3
+select avg(length(email)) as avg_email_length_below_30 from customer
+where city in ('Mumbai');
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1197" height="428" alt="image" src="https://github.com/user-attachments/assets/1deebb57-69d4-4b57-9f73-de991a3deddb" />
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="1204" height="728" alt="image" src="https://github.com/user-attachments/assets/df7f31b5-9e7a-4dac-bf44-2e25024eb213" />
 
 ```sql
--- Paste your SQL code below for Question 4
+select InsuranceCompany, count(*) as TotalExpiredPatients from Insurance
+group by InsuranceCompany;
+
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1203" height="799" alt="image" src="https://github.com/user-attachments/assets/8ca17e4d-86c2-4a0e-a16e-096bed9b0de7" />
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="1197" height="647" alt="image" src="https://github.com/user-attachments/assets/0e50b214-75c9-4c28-a4b3-eff7ef9b3449" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+select strftime("%Y",ValidityPeriod) as ValidityYear, count(*) as TotalPatients from Insurance
+group by strftime("%Y",ValidityPeriod);
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1199" height="510" alt="image" src="https://github.com/user-attachments/assets/09a582f2-b3e0-43ed-9739-cdca3d182c64" />
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="1202" height="658" alt="image" src="https://github.com/user-attachments/assets/28169fdc-4827-4c51-85aa-5d2f9a48a75b" />
 
 ```sql
--- Paste your SQL code below for Question 6
+select PatientID, count(*) as TotalAppointments from Appointments
+group by PatientID;
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1202" height="755" alt="image" src="https://github.com/user-attachments/assets/b179a3a6-7c65-4d49-b102-d589304d095f" />
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1203" height="602" alt="image" src="https://github.com/user-attachments/assets/eff94000-27ac-4195-baa4-e4c626b56e44" />
 
 ```sql
--- Paste your SQL code below for Question 7
+SELECT age, min(Income) as Income from employee
+group by age
+having min(Income)<1000000;
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="1202" height="561" alt="image" src="https://github.com/user-attachments/assets/5036407e-04f3-4cc8-a69b-4af0b8cb5013" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1202" height="547" alt="image" src="https://github.com/user-attachments/assets/a0e0e51c-7333-4a86-95c0-64fba30079d4" />
 
 ```sql
--- Paste your SQL code below for Question 8
+select age, MAX(income) from employee
+group by age
+having max(income)>2000000;
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="1201" height="477" alt="image" src="https://github.com/user-attachments/assets/571174cb-a443-4b83-9ed9-68a0da719b3f" />
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1202" height="611" alt="image" src="https://github.com/user-attachments/assets/467d602f-f540-49ca-aece-7f5a5b226be0" />
 
 ```sql
--- Paste your SQL code below for Question 9
+select occupation , MIN(workhour) from employee1
+group by occupation
+having min(workhour)>8;
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1195" height="609" alt="image" src="https://github.com/user-attachments/assets/f2ffd8d1-e55d-4419-93bf-1a200d0e6da3" />
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1197" height="588" alt="image" src="https://github.com/user-attachments/assets/dae9c4a2-4c20-4954-9b57-83e4f417941a" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+select city, AVG(income) from employee
+group by city
+having avg(income)>500000;
 ```
 
 **Output:**
 
-![Output10](output.png)
-
+<img width="1198" height="557" alt="image" src="https://github.com/user-attachments/assets/cd6101b9-7d11-481e-9b61-aa1a2759e24a" />
 
 ## RESULT
 Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully.
